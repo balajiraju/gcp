@@ -1,6 +1,6 @@
 #!/usr/bin/python
-projectname = raw_input("Please enter the Unique project name:")
-print ("The project name will be same as projectid")
+print ("The project name will be same as projectid so please enter unique name")
+projectname = raw_input("Please enter the Unique project name:"
 from googleapiclient import discovery
 from oauth2client.client import GoogleCredentials
 
