@@ -47,11 +47,11 @@ def main(argv):
    try:
       opts, args = getopt.getopt(argv,"hd:r:c:",["ifile=","ofile=","cfile="])
    except getopt.GetoptError:
-      print 'test.py -c <projectname to create> -d <project id to delete> -r <project id to restore>'
+      print 'project_manage.py -c <projectname to create> -d <project id to delete> -r <project id to restore>'
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print 'test.py -c <projectname to create> -d <project id to delete> -r <project id to restore>'
+         print 'project_manage.py -c <projectname to create> -d <project id to delete> -r <project id to restore>'
          sys.exit()
       elif opt in ("-d", "--ifile"):
          inputfile = arg
