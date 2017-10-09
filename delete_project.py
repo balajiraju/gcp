@@ -7,10 +7,12 @@ from oauth2client.client import GoogleCredentials
  
  
 credentials = GoogleCredentials.get_application_default()
-service = discovery.build('cloudresourcemanager', 'v1', credentials=credentials)
+
+service = discovery.build('cloudresourcemanager', 'v1beta1', credentials=credentials)
+
 print projectname
 
-project_id = 'projectname'  # TODO: Update placeholder value.
+project_id = projectname  # TODO: Update placeholder value.
 
 request = service.projects().delete(projectId=project_id)
 request.execute()
